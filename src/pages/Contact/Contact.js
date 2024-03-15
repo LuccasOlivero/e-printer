@@ -63,6 +63,12 @@ const Contact = () => {
     }
   };
 
+  const inputStyles =
+    "w-full py-1 border-b-2 px-2 text-base font-medium placeholder:font-normal placeholder:text-sm outline-none focus-within:border-primeColor";
+
+  const errorMessageStyles =
+    "text-red-500 text-sm font-titleFont font-semibold mt-1 px-2 flex items-center gap-1";
+
   return (
     <div className="max-w-container mx-auto px-4">
       <Breadcrumbs title="Contact" prevLocation={prevLocation} />
@@ -81,12 +87,12 @@ const Contact = () => {
               <input
                 onChange={handleName}
                 value={clientName}
-                className="w-full py-1 border-b-2 px-2 text-base font-medium placeholder:font-normal placeholder:text-sm outline-none focus-within:border-primeColor"
+                className={inputStyles}
                 type="text"
                 placeholder="Enter your name here"
               />
               {errClientName && (
-                <p className="text-red-500 text-sm font-titleFont font-semibold mt-1 px-2 flex items-center gap-1">
+                <p className={errorMessageStyles}>
                   <span className="text-sm italic font-bold">!</span>
                   {errClientName}
                 </p>
@@ -99,12 +105,12 @@ const Contact = () => {
               <input
                 onChange={handleEmail}
                 value={email}
-                className="w-full py-1 border-b-2 px-2 text-base font-medium placeholder:font-normal placeholder:text-sm outline-none focus-within:border-primeColor"
+                className={inputStyles}
                 type="email"
                 placeholder="Enter your name here"
               />
               {errEmail && (
-                <p className="text-red-500 text-sm font-titleFont font-semibold mt-1 px-2 flex items-center gap-1">
+                <p className={errorMessageStyles}>
                   <span className="text-sm italic font-bold">!</span>
                   {errEmail}
                 </p>
@@ -119,12 +125,12 @@ const Contact = () => {
                 value={messages}
                 cols="30"
                 rows="3"
-                className="w-full py-1 border-b-2 px-2 text-base font-medium placeholder:font-normal placeholder:text-sm outline-none focus-within:border-primeColor resize-none"
+                className={`${inputStyles} resize-none"`}
                 type="text"
                 placeholder="Enter your name here"
               ></textarea>
               {errMessages && (
-                <p className="text-red-500 text-sm font-titleFont font-semibold mt-1 px-2 flex items-center gap-1">
+                <p className={errorMessageStyles}>
                   <span className="text-sm italic font-bold">!</span>
                   {errMessages}
                 </p>

@@ -1,5 +1,4 @@
-import logo from "./orebiLogo.png";
-import logoLight from "./logoLight.png";
+import logo from "./orebiLogo.jpg";
 import bannerImgOne from "./banner/bannerImgOne.webp";
 import bannerImgTwo from "./banner/bannerImgTwo.webp";
 import bannerImgThree from "./banner/bannerImgThree.webp";
@@ -77,7 +76,6 @@ import espson2 from "../images/products/imprimante/espson2.webp";
 
 export {
   logo,
-  logoLight,
   bannerImgOne,
   bannerImgTwo,
   bannerImgThree,

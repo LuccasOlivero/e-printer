@@ -1,16 +1,4 @@
 import {
-  spfOne,
-  spfTwo,
-  spfThree,
-  spfFour,
-  bestSellerOne,
-  bestSellerTwo,
-  bestSellerThree,
-  bestSellerFour,
-  newArrOne,
-  newArrTwo,
-  newArrThree,
-  newArrFour,
   imprimante1,
   imprimante2,
   imprimante4,
@@ -53,8 +41,6 @@ import {
   espson2,
 } from "../assets/images/index";
 
-import "./style.css";
-
 // =================== NavBarList Start here ====================
 export const navBarList = [
   {
@@ -76,11 +62,6 @@ export const navBarList = [
     _id: 1004,
     title: "Contact",
     link: "contact",
-  },
-  {
-    _id: 1005,
-    title: "Journal",
-    link: "/journal",
   },
 ];
 // =================== NavBarList End here ======================

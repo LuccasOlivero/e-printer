@@ -2,17 +2,16 @@ import React, { useEffect, useState } from "react";
 import Heading from "../Products/Heading";
 import Product from "../Products/Product";
 import { SplOfferData } from "../../../constants";
-import { useParams } from "react-router-dom";
 
 const SpecialOffers = () => {
-  const { category } = useParams();
-
   const [data, setData] = useState([]);
+
   useEffect(() => {
     setData(SplOfferData);
   }, [data]);
 
-  const catData = data.filter((item) => item.cat === category);
+  const catData = data.map((items) => items);
+
   return (
     <div className="w-full pb-20">
       <Heading heading="Special Offers" />
